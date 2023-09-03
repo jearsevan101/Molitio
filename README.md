@@ -5,3 +5,12 @@ Poppins Extra Light
 Ketua Kelompok : Hiera Ahmaddhio Rhesadewa-21/473997/TK/52268
 Anggota 1 : Julius Evan Adipramana Raharja Suryanto-21/482618/TK/53326
 Anggota 2 : Leonard Mars Kurniaputra-21/482745/TK/53360
+
+
+Project Senior Project TI
+Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik,Universitas Gadjah Mada
+Nama produk                   : Molitio
+Jenis produk                  : Desktop Application
+Latar belakang & permasalahan : 
+Ide solusi                    : 
+Analisis kompetitor           : 
