@@ -11,6 +11,6 @@ Project Senior Project TI
 Departemen Teknologi Elektro dan Teknologi Informasi, Fakultas Teknik,Universitas Gadjah Mada
 Nama produk                   : Molitio
 Jenis produk                  : Desktop Application
-Latar belakang & permasalahan : 
-Ide solusi                    : 
-Analisis kompetitor           : 
+
+![image](https://github.com/jearsevan101/Molitio/assets/111979263/91b83c47-8196-4c0e-a2ad-137c23a1c8ad)
+
