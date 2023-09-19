@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Molitio
 {
@@ -20,35 +21,76 @@ namespace Molitio
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int initialTimeInSeconds = 60; // Initial time in seconds
+        private int currentTimeInSeconds;
+        private DispatcherTimer timer;
         public MainWindow()
         {
             InitializeComponent();
-            
+            InitializeTimer();
         }
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        private void InitializeTimer()
         {
-            string username = UsernameTextBox.Text;
-            string password = PasswordBox.Password;
-
-            // Tempatkan logika validasi login di sini.
-            // Misalnya, Anda dapat memeriksa apakah username dan password cocok dengan data yang sah.
-
-            if (IsValidLogin(username, password))
+            currentTimeInSeconds = initialTimeInSeconds;
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            UpdateTimerDisplay();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (currentTimeInSeconds > 0)
             {
-                MessageBox.Show("Login berhasil!");
-                // Di sini Anda dapat membuka jendela baru atau melakukan tindakan lain sesuai kebutuhan.
+                currentTimeInSeconds--;
+                UpdateTimerDisplay();
             }
             else
             {
-                MessageBox.Show("Login gagal. Periksa kembali username dan password.");
+                timer.Stop();
+                Timerbg.Fill = new SolidColorBrush(Colors.LightPink);
+                MessageBox.Show("Time's up!");
+            }
+        }
+        private void UpdateTimerDisplay()
+        {
+            TimeSpan timeSpan = TimeSpan.FromSeconds(currentTimeInSeconds);
+            TimerLabel.Content = timeSpan.ToString(@"hh\:mm\:ss");
+        }
+        private void OnButtonStart(object sender, RoutedEventArgs e)
+        {
+            if (!timer.IsEnabled)
+            {
+                timer.Start();
             }
         }
 
-        private bool IsValidLogin(string username, string password)
+        private void OnButtonStop(object sender, RoutedEventArgs e)
         {
-            // Anda dapat mengganti ini dengan logika validasi yang sesuai dengan kebutuhan Anda.
-            // Contoh sederhana: username dan password harus "admin" dan "password".
-            return username == "admin" && password == "password";
+            if (timer.IsEnabled)
+            {
+                timer.Stop();
+            }
+        }
+
+        private void SetTimeButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (!timer.IsEnabled)
+            {
+                if (int.TryParse(TimeTextBox.Text, out int newTime))
+                {
+                    initialTimeInSeconds = newTime;
+                    currentTimeInSeconds = initialTimeInSeconds;
+                    UpdateTimerDisplay();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid input. Please enter a valid integer.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Timer is running. Stop it before setting a new time.");
+            }
         }
     }
 }

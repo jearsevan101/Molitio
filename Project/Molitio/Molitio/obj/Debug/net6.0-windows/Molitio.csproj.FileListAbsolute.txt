@@ -19,3 +19,6 @@ D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj
 D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
 D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
 D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.g.cs
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.baml
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
