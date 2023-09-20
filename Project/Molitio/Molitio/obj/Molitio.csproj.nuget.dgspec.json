@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\kuliah\\.Semester 5\\Junior Project\\Molitio\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj": {}
+    "E:\\Junior Project\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj": {}
   },
   "projects": {
-    "D:\\kuliah\\.Semester 5\\Junior Project\\Molitio\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj": {
+    "E:\\Junior Project\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\kuliah\\.Semester 5\\Junior Project\\Molitio\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
+        "projectUniqueName": "E:\\Junior Project\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
         "projectName": "Molitio",
-        "projectPath": "D:\\kuliah\\.Semester 5\\Junior Project\\Molitio\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
+        "projectPath": "E:\\Junior Project\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "D:\\kuliah\\.Semester 5\\Junior Project\\Molitio\\Molitio\\Project\\Molitio\\Molitio\\obj\\",
+        "outputPath": "E:\\Junior Project\\Molitio\\Project\\Molitio\\Molitio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
