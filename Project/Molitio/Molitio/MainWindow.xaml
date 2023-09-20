@@ -1,0 +1,73 @@
+﻿<Window x:Class="Molitio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Molitio"
+        xmlns:userControls="clr-namespace:Molitio.View.UserControls"
+        mc:Ignorable="d"
+        Title="Molitio" Height="700" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" FontSize="45" HorizontalAlignment="Center">Pomodoro</Label>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="350"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" FontSize="35" HorizontalAlignment="Center">Set Timer</Label>
+            <TextBox Grid.Column="0" Name="TimeTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Second" VerticalAlignment="Center" Width="200"/>
+            <Button Grid.Column="0" HorizontalAlignment="Center" FontSize="25"
+                    VerticalAlignment="Bottom" Width="100" Height="40" Margin="0,0,0,10" Content="Set" Click="SetTimeButton_Click"/>
+            <Rectangle Grid.Column="1" Fill="LightBlue" Name="Timerbg"/>
+            <Label Grid.Column="1" FontSize="45" HorizontalAlignment="Center" VerticalAlignment="Top">Timer</Label>
+            <Label Grid.Column="1" Name="TimerLabel" FontSize="55" HorizontalAlignment="Center" VerticalAlignment="Center">10:10</Label>
+            <Button Grid.Column="1" FontSize="25" Width="100" Height ="40" 
+                    HorizontalAlignment="Center"  VerticalAlignment="Bottom" 
+                    Background="Blue"  Content="Start" Click="OnButtonStart" Margin="105,0,0,10"/>
+            <Button Grid.Column="1"  FontSize="25" Width="100" Height ="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                    Background="Red" Content="Stop" Click="OnButtonStop" Margin="0,0,105,10"/>
+            <Label Grid.Column="2" FontSize="35" HorizontalAlignment="Center">Notes</Label>
+            <TextBox Grid.Column="2" HorizontalAlignment="Center" 
+                     TextWrapping="Wrap" Text="Type Here" VerticalAlignment="Center" 
+                     Width="250" Height="150" Margin="0,20,0,0"/>
+            
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Top">To Do List</Label>
+                <userControls:Task Grid.Row="1" Height="40" Width="550"/>
+                <userControls:Task Grid.Row="2" Height="40" Width="550"/>
+                <userControls:Task Grid.Row="3" Height="40" Width="550"/>
+                <userControls:Task Grid.Row="4" Height="40" Width="550"/>
+                <userControls:Task Grid.Row="5" Height="40" Width="550"/>
+            </Grid>
+            <Label Grid.Column="1" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Top">Daily Task</Label>
+        </Grid>
+
+    </Grid>
+</Window>
