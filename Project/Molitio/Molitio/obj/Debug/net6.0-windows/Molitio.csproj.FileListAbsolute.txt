@@ -1,0 +1,71 @@
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.exe
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.deps.json
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.runtimeconfig.json
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.dll
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.pdb
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.csproj.AssemblyReference.cache
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\App.g.cs
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.cache
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.lref
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.baml
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.g.resources
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.GeneratedMSBuildEditorConfig.editorconfig
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfoInputs.cache
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfo.cs
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.csproj.CoreCompileInputs.cache
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.dll
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\refint\Molitio.dll
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.g.cs
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.baml
+D:\kuliah\.Semester 5\Junior Project\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\Junior Project\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.exe
+E:\Junior Project\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.deps.json
+E:\Junior Project\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.runtimeconfig.json
+E:\Junior Project\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.dll
+E:\Junior Project\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.pdb
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.csproj.AssemblyReference.cache
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.g.cs
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\App.g.cs
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.cache
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.lref
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.baml
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.baml
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.g.resources
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.GeneratedMSBuildEditorConfig.editorconfig
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfoInputs.cache
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfo.cs
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.csproj.CoreCompileInputs.cache
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.dll
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\refint\Molitio.dll
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.exe
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.deps.json
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.runtimeconfig.json
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.dll
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.pdb
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.g.cs
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.g.cs
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\App.g.cs
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.cache
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.lref
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.baml
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.baml
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.g.resources
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.GeneratedMSBuildEditorConfig.editorconfig
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfoInputs.cache
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfo.cs
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.csproj.CoreCompileInputs.cache
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.dll
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\refint\Molitio.dll
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
+H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
