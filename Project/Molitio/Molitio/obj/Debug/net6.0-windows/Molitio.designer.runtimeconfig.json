@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\hiera\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\hiera\\.nuget\\packages"
+      "C:\\Users\\Asus\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Asus\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

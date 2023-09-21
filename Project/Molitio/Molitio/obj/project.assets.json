@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\hiera\\.nuget\\packages\\": {}
+    "C:\\Users\\Asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\#College\\#Semester 5\\Proyek Junior\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
+      "projectUniqueName": "C:\\#College\\Semester 5\\Projek Junior\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
       "projectName": "Molitio",
-      "projectPath": "H:\\#College\\#Semester 5\\Proyek Junior\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
-      "packagesPath": "C:\\Users\\hiera\\.nuget\\packages\\",
-      "outputPath": "H:\\#College\\#Semester 5\\Proyek Junior\\Molitio\\Project\\Molitio\\Molitio\\obj\\",
+      "projectPath": "C:\\#College\\Semester 5\\Projek Junior\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\#College\\Semester 5\\Projek Junior\\Molitio\\Project\\Molitio\\Molitio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hiera\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
