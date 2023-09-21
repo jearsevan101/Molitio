@@ -19,7 +19,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="250"/>
             </Grid.ColumnDefinitions>
-            <Label Grid.Column="1" FontSize="45" HorizontalAlignment="Center">Pomodoro</Label>
+            <Label Grid.Column="1" FontSize="45" HorizontalAlignment="Center">Molitio</Label>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -27,12 +27,9 @@
                 <ColumnDefinition />
                 <ColumnDefinition Width="350"/>
             </Grid.ColumnDefinitions>
-            <Label Grid.Column="0" FontSize="35" HorizontalAlignment="Center">Set Timer</Label>
-            <TextBox Grid.Column="0" Name="TimeTextBox" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Second" VerticalAlignment="Center" Width="200"/>
-            <Button Grid.Column="0" HorizontalAlignment="Center" FontSize="25"
-                    VerticalAlignment="Bottom" Width="100" Height="40" Margin="0,0,0,10" Content="Set" Click="SetTimeButton_Click"/>
+            <Label Grid.Column="0" FontSize="35" HorizontalAlignment="Center" Content="Set Break Time"/>
             <Rectangle Grid.Column="1" Fill="LightBlue" Name="Timerbg"/>
-            <Label Grid.Column="1" FontSize="45" HorizontalAlignment="Center" VerticalAlignment="Top">Timer</Label>
+            <Label Grid.Column="1" Name="TimerTitle" FontSize="45" HorizontalAlignment="Center" VerticalAlignment="Top">Pomodoro Timer</Label>
             <Label Grid.Column="1" Name="TimerLabel" FontSize="55" HorizontalAlignment="Center" VerticalAlignment="Center">10:10</Label>
             <Button Grid.Column="1" FontSize="25" Width="100" Height ="40" 
                     HorizontalAlignment="Center"  VerticalAlignment="Bottom" 
@@ -43,7 +40,9 @@
             <TextBox Grid.Column="2" HorizontalAlignment="Center" 
                      TextWrapping="Wrap" Text="Type Here" VerticalAlignment="Center" 
                      Width="250" Height="150" Margin="0,20,0,0"/>
-            
+            <RadioButton Name="SetShortBreak" Content="Short Break (5 minutes)" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Checked="RadioButton1_Checked" IsChecked="True"/>
+            <RadioButton Name="SetLongBreak" Content="Long Break (15 minutes)" HorizontalAlignment="Left" Margin="104,141,0,0" VerticalAlignment="Top" Checked="RadioButton2_Checked"/>
+
         </Grid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
