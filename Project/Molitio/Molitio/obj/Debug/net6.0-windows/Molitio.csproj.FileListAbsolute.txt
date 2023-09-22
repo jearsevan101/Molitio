@@ -69,3 +69,26 @@ H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\
 H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
 H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
 H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.exe
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.deps.json
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.runtimeconfig.json
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.dll
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.pdb
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.g.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.cache
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.lref
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.baml
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.g.resources
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfoInputs.cache
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfo.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.csproj.CoreCompileInputs.cache
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.dll
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\refint\Molitio.dll
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
