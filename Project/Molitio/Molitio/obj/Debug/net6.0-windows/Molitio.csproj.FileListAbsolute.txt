@@ -92,3 +92,13 @@ C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Moliti
 C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
 C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
 C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\IndividualTask.g.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\IndividualTask.baml
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ProjectTask.g.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ProjectName.g.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\TaskLists.g.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\NewDailyTask.g.cs
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ProjectTask.baml
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ProjectName.baml
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\TaskLists.baml
+C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\NewDailyTask.baml

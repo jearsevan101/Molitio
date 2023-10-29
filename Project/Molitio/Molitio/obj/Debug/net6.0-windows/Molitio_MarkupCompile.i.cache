@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\App.xaml
-21552803784
+7-871483601
 
-131864875158
+1882332722
 194183970531
-MainWindow.xaml;View\UserControls\Task.xaml;
+IndividualTask.xaml;MainWindow.xaml;NewDailyTask.xaml;ProjectName.xaml;ProjectTask.xaml;TaskLists.xaml;View\UserControls\Task.xaml;
 
-False
+True
 

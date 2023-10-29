@@ -7,12 +7,42 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="IndividualTask.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NewDailyTask.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProjectName.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProjectTask.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TaskLists.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\UserControls\Task.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="IndividualTask.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NewDailyTask.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjectName.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProjectTask.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TaskLists.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\UserControls\Task.xaml">
