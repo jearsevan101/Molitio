@@ -92,3 +92,5 @@ C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Moliti
 C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
 C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
 C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Notebook.g.cs
+E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Notebook.baml
