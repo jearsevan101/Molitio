@@ -8,40 +8,29 @@ namespace Molitio
 {
     class Task
     {
-        public int _idTask;
-        public string _taskName;
-        public DateTime _taskDeadlineDate;
-        public int _taskDeadlineTime;
-        public string _taskDescription;
-
         public int idTask
         {
-            get { return _idTask; }
-            set { _idTask = value; }
+            get { return idTask; }
         }
 
         public string taskName
         {
-            get { return _taskName; }
-            set { _taskName = value; }
+            get { return taskName; }
         }
 
         public DateTime taskDeadlineDate
         {
-            get { return _taskDeadlineDate; }
-            set { _taskDeadlineDate = value; }
+            get { return taskDeadlineDate; }
         }
 
         public int taskDeadlineTime
         {
-            get { return _taskDeadlineTime; }
-            set { _taskDeadlineTime = value; }
+            get { return taskDeadlineTime; }
         }
 
         public string taskDescription
         {
-            get { return _taskDescription; }
-            set { _taskDescription = value; }
+            get { return taskDescription; }
         }
     }
 }

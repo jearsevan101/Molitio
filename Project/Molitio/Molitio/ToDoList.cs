@@ -3,48 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
-using System.Xml.Serialization;
 
 namespace Molitio
 {
     class ToDoList
     {
-        private List<Task> tasks = new List<Task>();
-
-        public int _idToDoList;
-
         public int idToDoList
         {
-            get { return _idToDoList; }
-            set { _idToDoList = value; }
+            get { return idToDoList; }
         }
 
-        int idNext = 0;
-
-        public void createTask(Task newtask)
+        public void createTask()
         {
-            newtask.idTask = idNext;
-            tasks.Add(newtask);
-            idNext++;
+            //Create individual task 
         }
 
-        public void editTask(int id, Task editedtask)
+        public void editTask(int _idTask)
         {
-            var task = tasks.Find(p => p.idTask == id);
-            if (task != null)
-            {
-                task = editedtask;
-            }
+            //Edit existing task
         }
 
-        public void deleteTask(int id)
+        public void deleteTask(int _idTask)
         {
-            var task = tasks.Find(p => p.idTask == id);
-            if (task != null)
-            {
-                tasks.Remove(task);
-            }
+            //Delete existing task
         }
     }
 }

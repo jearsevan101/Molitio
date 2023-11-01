@@ -7,7 +7,16 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Notebook.xaml.cs">
+    <Compile Update="MVVM\View\NotebookView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\ProductivityView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NewMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserControls\NotePreview.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\UserControls\Task.xaml.cs">
@@ -18,7 +27,19 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Notebook.xaml">
+    <Page Update="MVVM\View\NotebookView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\ProductivityView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NewMainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\MenuButtonTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserControls\NotePreview.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\UserControls\Task.xaml">

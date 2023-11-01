@@ -10,34 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Molitio
+namespace Molitio.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for IndividualTask.xaml
+    /// Interaction logic for NotebookView.xaml
     /// </summary>
-    public partial class IndividualTask : Window
+    public partial class NotebookView : UserControl
     {
-        public IndividualTask()
+        public NotebookView()
         {
             InitializeComponent();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
-        }
-
-        private void switchProject_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-
-        }
-
-        private void btnAddTask_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
 
         }
     }

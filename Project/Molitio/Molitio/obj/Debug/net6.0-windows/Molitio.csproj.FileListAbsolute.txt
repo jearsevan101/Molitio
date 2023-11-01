@@ -69,28 +69,37 @@ H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\
 H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
 H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
 H:\#College\#Semester 5\Proyek Junior\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.exe
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.deps.json
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.runtimeconfig.json
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.dll
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.pdb
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.g.cs
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\App.g.cs
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.cache
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.lref
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.baml
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.g.resources
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfoInputs.cache
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfo.cs
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.csproj.CoreCompileInputs.cache
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.dll
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\refint\Molitio.dll
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
-C:\Users\ROG\Leon\Codingan\COLLEGE\Junpro\Molitio\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
-E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Notebook.g.cs
-E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Notebook.baml
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.exe
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.deps.json
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.runtimeconfig.json
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.dll
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\bin\Debug\net6.0-windows\Molitio.pdb
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.csproj.AssemblyReference.cache
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Theme\MenuButtonTheme.baml
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MVVM\View\NotebookView.g.cs
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\NewMainWindow.g.cs
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.g.cs
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\App.g.cs
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.cache
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio_MarkupCompile.lref
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\App.baml
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MainWindow.baml
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MVVM\View\NotebookView.baml
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\NewMainWindow.baml
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\Task.baml
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.g.resources
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.GeneratedMSBuildEditorConfig.editorconfig
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfoInputs.cache
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.AssemblyInfo.cs
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.csproj.CoreCompileInputs.cache
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.dll
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\refint\Molitio.dll
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MVVM\View\ProductivityView.g.cs
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\MVVM\View\ProductivityView.baml
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\NotePreview.g.cs
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\View\UserControls\NotePreview.baml

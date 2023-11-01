@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Molitio
+namespace Molitio.View.UserControls
 {
     /// <summary>
-    /// Interaction logic for ProjectName.xaml
+    /// Interaction logic for NotePreview.xaml
     /// </summary>
-    public partial class ProjectName : Window
+    public partial class NotePreview : UserControl
     {
-        public ProjectName()
+        public NotePreview()
         {
             InitializeComponent();
-        }
-
-        private void btnAdd_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

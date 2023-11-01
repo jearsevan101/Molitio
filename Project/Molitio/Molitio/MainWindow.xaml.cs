@@ -43,7 +43,7 @@ namespace Molitio
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
-            //TimerTitle.Content = "Rest well...";
+            TimerTitle.Content = "Rest well...";
             UpdateTimerDisplay();
             isRest = false;
             timer.Start();
@@ -55,7 +55,7 @@ namespace Molitio
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
-            //TimerTitle.Content = "Pomodoro starting...";
+            TimerTitle.Content = "Pomodoro starting...";
             UpdateTimerDisplay();
             isRest = true;
             timer.Start();
@@ -74,7 +74,7 @@ namespace Molitio
                 {
                     pomodoroBreak();
                 }
-                else if (type == false)
+                else if (type == false) 
                 {
                     pomodoroDefault();
                     timer.Start();
@@ -83,7 +83,7 @@ namespace Molitio
             else
             {
                 Timerbg.Fill = new SolidColorBrush(Colors.LightBlue);
-                //TimerTitle.Content = "Pomodoro Timer";
+                TimerTitle.Content = "Pomodoro Timer";
             }
         }
         private void InitializeTimer()
@@ -103,11 +103,11 @@ namespace Molitio
             }
             else
             {
-                if (isDefault == true)
+                if (isDefault==true)
                 {
                     timerDone("Start resting?", true);
                 }
-                else if (isDefault == false)
+                else if (isDefault==false)
                 {
                     timerDone("Restart pomodoro?", false);
                 }
@@ -149,23 +149,6 @@ namespace Molitio
         private void RadioButton2_Checked(object sender, RoutedEventArgs e)
         {
             pomodoroBreakInSecond = pomodoroLongBreakInSeconds;
-        }
-
-        private void ShortBreak_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void LongBreak_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void OpenNotebooks_Click(object sender, RoutedEventArgs e)
-        {
-            Notebook notebook = new Notebook();
-            notebook.Show();
-            this.Close();
         }
     }
 }
