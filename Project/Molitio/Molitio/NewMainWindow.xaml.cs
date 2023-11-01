@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace Molitio
 {
     /// <summary>
-    /// Interaction logic for Notebook.xaml
+    /// Interaction logic for NewMainWindow.xaml
     /// </summary>
-    public partial class Notebook : Window
+    public partial class NewMainWindow : Window
     {
-        public Notebook()
+        public NewMainWindow()
         {
             InitializeComponent();
-        }
-        private void GoBack_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
         }
     }
 }

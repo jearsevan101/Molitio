@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Junior Project\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\
 Molitio
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\Junior Project\Molitio\Project\Molitio\Molitio\App.xaml
-3-1501579467
+C:\#College\Semester 5\Projek Junior\Backup\Molitio2\Molitio\Project\Molitio\Molitio\App.xaml
+7407253797
 
-12-1292379836
-194-2004305220
-MainWindow.xaml;Notebook.xaml;View\UserControls\Task.xaml;
+181763781345
+194-200944676
+MainWindow.xaml;MVVM\View\NotebookView.xaml;MVVM\View\ProductivityView.xaml;NewMainWindow.xaml;Theme\MenuButtonTheme.xaml;View\UserControls\NotePreview.xaml;View\UserControls\Task.xaml;
 
 False
 

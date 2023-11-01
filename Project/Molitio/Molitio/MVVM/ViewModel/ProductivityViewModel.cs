@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Molitio
+namespace Molitio.MVVM.ViewModel
 {
-    class Pomodoro
+    internal class ProductivityViewModel
     {
     }
 }

@@ -10,28 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Molitio
+namespace Molitio.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for NewDailyTask.xaml
+    /// Interaction logic for ProductivityView.xaml
     /// </summary>
-    public partial class NewDailyTask : Window
+    public partial class ProductivityView : UserControl
     {
-        public NewDailyTask()
+        public ProductivityView()
         {
             InitializeComponent();
-        }
-
-        private void btnAddDailyTask_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
