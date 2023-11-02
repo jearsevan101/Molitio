@@ -12,21 +12,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Molitio
+namespace Molitio.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for ProjectName.xaml
+    /// Interaction logic for DailyTaskView.xaml
     /// </summary>
-    public partial class ProjectName : Window
+    public partial class DailyTaskView : Window
     {
-        public ProjectName()
+        public DailyTaskView()
         {
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        private void btnAddDailyTask_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+
         }
     }
 }
