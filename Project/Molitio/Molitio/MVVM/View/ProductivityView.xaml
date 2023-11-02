@@ -72,7 +72,7 @@
                     <userControls:DailyTaskUserControl Grid.Row="9" Time="13:00 WIB" Title="Lari pagi"/>
                 </Grid>
                 <Grid Grid.Row="2">
-                    <Button HorizontalAlignment="Center" FontSize="20"
+                    <Button x:Name="btnAddDailyTask" HorizontalAlignment="Center" FontSize="20"
                         VerticalAlignment="Center" Width="120" Height="35"  
                         Content="Add New"/>
                 </Grid>
@@ -117,8 +117,8 @@
                             <userControls:ToDoListUserControl Grid.Row="5" TaskName="Task 1" DateTask="2 November 2023" TaskDescription="Rekayasa data kerjain datacamp"/>
                         </Grid>
                         <Grid Grid.Row="2">
-                            <Button Grid.Row="2" HorizontalAlignment="Center" FontSize="20"
-                            VerticalAlignment="Center" Width="120" Height="35" Content="Add New"/>
+                            <Button x:Name="btnAddToDoList" Grid.Row="2" HorizontalAlignment="Center" FontSize="20"
+                            VerticalAlignment="Center" Width="120" Height="35" Content="Add New" Click="btnAddToDoList_Click"/>
                         </Grid>
                     </Grid>
                     <Grid Grid.Column="2" Background="White">
@@ -153,17 +153,17 @@
                             <Label Grid.Row="0" FontSize="35" HorizontalAlignment="Center">Notes</Label>
                         </Grid>
                         <Grid Grid.Row="1" Background="White">
-                            <TextBox Grid.Row="1" HorizontalAlignment="Center" 
+                            <TextBox x:Name="tbNoteTitle" Grid.Row="1" HorizontalAlignment="Center" 
                             TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" 
                             Width="250" Height="35" Margin="0,20,0,0"/>
-                            <TextBox Grid.Row="1" HorizontalAlignment="Center" 
+                            <TextBox x:Name="tbNoteDesc" Grid.Row="1" HorizontalAlignment="Center" 
                             TextWrapping="Wrap" Text="Body" VerticalAlignment="Center" 
                             Width="250" Height="250" Margin="0,20,0,0"/>
                         </Grid>
                         <Grid Grid.Row="3" Background="White">
                             <Label Grid.Row="3" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2">Category</Label>
-                            <Button Grid.Row="3" HorizontalAlignment="Center" FontSize="20"
-                            VerticalAlignment="Bottom" Width="250" Height="35" Content="Save to Notebooks"  Margin="0,0,0,10"/>
+                            <Button x:Name="btnAddNote" Grid.Row="3" HorizontalAlignment="Center" FontSize="20"
+                            VerticalAlignment="Bottom" Width="250" Height="35" Content="Save to Notebooks"  Margin="0,0,0,10" Click="btnAddNote_Click"/>
                             <ComboBox Grid.Row="3" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Center" Width="250" Height="35"/>
                         </Grid>
                     </Grid>

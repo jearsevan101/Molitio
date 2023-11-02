@@ -93,7 +93,7 @@ namespace Molitio.View.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Molitio;V1.0.0.0;component/view/usercontrols/task.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Molitio;component/view/usercontrols/task.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\UserControls\Task.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
