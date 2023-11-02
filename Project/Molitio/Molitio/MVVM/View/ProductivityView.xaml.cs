@@ -35,13 +35,14 @@ namespace Molitio.MVVM.View
         private bool isDefault;
         private DispatcherTimer timer;
         private NpgsqlConnection conn;
-        /*string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";*/
-        string connstring = "Host=localhost; Port=5432; Username=postgres; Password=psql; Database=junpro";
+        string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";
+        /*string connstring = "Host=localhost; Port=5432; Username=postgres; Password=psql; Database=junpro";*/
         public ProductivityView()
         {
             InitializeComponent();
             InitializeTimer();
-            /*PopulateDailyTasksFromDatabase();*/
+            PopulateDailyTasksFromDatabase();
+            PopulateToDoListFromDatabase();
         }
         
         private void PopulateDailyTasksFromDatabase()
@@ -63,14 +64,15 @@ namespace Molitio.MVVM.View
                                     int row = 0;
                                     while (reader.Read() && row < gridDailyTasks.Children.Count)
                                     {
-                                        string time = reader["taskname"].ToString();
-                                        string title = reader["taskdesc"].ToString();
+                                        string time = reader["tasktime"].ToString();
+                                        string title = reader["taskname"].ToString();
 
                                         // Ensure gridDailyTasks has enough children before accessing them
                                         if (gridDailyTasks.Children[row] is DailyTaskUserControl dailyTaskUserControl)
                                         {
                                             dailyTaskUserControl.Time = time;
                                             dailyTaskUserControl.Title = title;
+                                            dailyTaskUserControl.Visibility = Visibility.Visible;
                                         }
 
                                         row++;
@@ -92,7 +94,57 @@ namespace Molitio.MVVM.View
             }
         }
 
+        private void PopulateToDoListFromDatabase()
+        {
+            try
+            {
+                if (gridToDoList != null)
+                {
+                    using (conn = new NpgsqlConnection(connstring))
+                    {
+                        conn.Open();
 
+                        using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM toDoList_select()", conn))
+                        {
+                            using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                Application.Current.Dispatcher.Invoke(() =>
+                                {
+                                    int row = 0;
+                                    while (reader.Read() && row < gridToDoList.Children.Count)
+                                    {
+                                        string taskName = reader["taskName"].ToString();
+                                        string taskDesc = reader["taskDesc"].ToString();
+                                        string dateTask = reader["taskDate"].ToString(); // You may need to convert it to the desired date format
+                                        bool isDone = Convert.ToBoolean(reader["isDone"]);
+
+                                        // Ensure gridToDoList has enough children before accessing them
+                                        if (gridToDoList.Children[row] is ToDoListUserControl toDoListUserControl)
+                                        {
+                                            toDoListUserControl.TaskName = taskName;
+                                            toDoListUserControl.DateTask = dateTask;
+                                            toDoListUserControl.TaskDescription = taskDesc;
+                                            toDoListUserControl.Visibility = Visibility.Visible;
+                                        }
+
+                                        row++;
+                                    }
+                                });
+                            }
+                        }
+                        conn.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log, show error message)
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                });
+            }
+        }
         private void pomodoroBreak()
         {
             currentTimeInSeconds = pomodoroBreakInSecond;

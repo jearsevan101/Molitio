@@ -35,13 +35,13 @@ namespace Molitio.View.UserControls
 
         public string DateTask
         {
-            get { return (string)GetValue(MyPropertyProperty); }
-            set { SetValue(MyPropertyProperty, value); }
+            get { return (string)GetValue(DateTaskProperty); }
+            set { SetValue(DateTaskProperty, value); }
         }
 
         // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty MyPropertyProperty =
-            DependencyProperty.Register("MyProperty", typeof(string), typeof(ToDoListUserControl), new PropertyMetadata(string.Empty));
+        public static readonly DependencyProperty DateTaskProperty =
+            DependencyProperty.Register("DateTask", typeof(string), typeof(ToDoListUserControl), new PropertyMetadata(string.Empty));
 
 
         public string TaskDescription
