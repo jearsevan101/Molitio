@@ -35,5 +35,10 @@ namespace Molitio.MVVM.View
             this.Close();
 
         }
+
+        private void btnAddToDoList_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

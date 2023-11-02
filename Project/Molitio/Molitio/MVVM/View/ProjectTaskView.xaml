@@ -21,8 +21,8 @@
                 <RowDefinition Height="264*"/>
             </Grid.RowDefinitions>
             <Button x:Name="btnSaveProject" Content="Save Project" Margin="0,233,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="230" Grid.Row="3" Height="20" Click="btnSaveProject_Click"/>
-            <Button x:Name="btnAddTask" Content="Add" HorizontalAlignment="Center" Margin="0,201,0,0" VerticalAlignment="Top" Width="230" Grid.Row="3" Height="20" Click="btnAddTask_Click"/>
-            <TextBox x:Name="tbTaskName" HorizontalAlignment="Center" Margin="0,36,0,0" TextWrapping="Wrap" Text="Task Name..." VerticalAlignment="Top" Width="230" Height="23" TextChanged="TextBox_TextChanged" Grid.Row="3"/>
+            <Button x:Name="btnAddTask" Content="Add" HorizontalAlignment="Center" Margin="0,201,0,0" VerticalAlignment="Top" Width="230" Grid.Row="3" Height="20"/>
+            <TextBox x:Name="tbTaskName" HorizontalAlignment="Center" Margin="0,36,0,0" TextWrapping="Wrap" Text="Task Name..." VerticalAlignment="Top" Width="230" Height="23" Grid.Row="3"/>
             <TextBox x:Name="tbDescription" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Description..." Margin="0,95,0,0" VerticalAlignment="Top" Width="230" Height="93" Grid.Row="3"/>
             <DatePicker x:Name="dlTask" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" Width="230" Grid.Row="3" Text="Deadline Date" Height="24"/>
             <Label Content="Add Task" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.4,-0.05" Grid.Row="3" Height="26" Width="57"/>
