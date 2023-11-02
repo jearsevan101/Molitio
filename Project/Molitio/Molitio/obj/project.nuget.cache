@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vv1EKGw/Vt9nBCUqIdA+T/TSmS+Jg3f/kOEWVey0gIqEEInkXWkW6AqJOKqH9ScoTGbU6gRh4D/sJjSjwVc4dg==",
+  "dgSpecHash": "Bf107Yu9n8F7bAsibr6Avc2lOWy98J3D41oKuKqay+kfr8OfHhNk+H8JwBQVMhpj1lB9lh3TQ7wgrhlqxADdBw==",
   "success": true,
-  "projectFilePath": "C:\\#College\\Semester 5\\Projek Junior\\Backup\\Molitio2\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\Junpro temp per8\\1\\Molitio\\Project\\Molitio\\Molitio\\Molitio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\asus\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

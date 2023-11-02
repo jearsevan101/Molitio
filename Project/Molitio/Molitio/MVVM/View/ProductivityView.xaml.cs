@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
+using Npgsql;
+using System.Data;
+using Molitio.View.UserControls;
 
 namespace Molitio.MVVM.View
 {
@@ -20,9 +24,179 @@ namespace Molitio.MVVM.View
     /// </summary>
     public partial class ProductivityView : UserControl
     {
+        private int initialTimeInSeconds = 5; // Initial time in seconds
+        private int currentTimeInSeconds;
+        private int pomodoroTimeInSeconds = 5;
+        private int pomodoroShortBreakInSeconds = 3;
+        private int pomodoroLongBreakInSeconds = 9;
+        private int pomodoroBreakInSecond;
+        private bool isRest;
+        private bool isDefault;
+        private DispatcherTimer timer;
+        private NpgsqlConnection conn;
+        string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";
         public ProductivityView()
         {
             InitializeComponent();
+            InitializeTimer();
+            PopulateDailyTasksFromDatabase();
+        }
+        
+        private void PopulateDailyTasksFromDatabase()
+        {
+            try
+            {
+                if (gridDailyTasks != null)
+                {
+                    using (conn = new NpgsqlConnection(connstring))
+                    {
+                        conn.Open();
+
+                        using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM dailyTask_select()", conn))
+                        {
+                            using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                Application.Current.Dispatcher.Invoke(() =>
+                                {
+                                    int row = 0;
+                                    while (reader.Read() && row < gridDailyTasks.Children.Count)
+                                    {
+                                        string time = reader["taskname"].ToString();
+                                        string title = reader["taskdesc"].ToString();
+
+                                        // Ensure gridDailyTasks has enough children before accessing them
+                                        if (gridDailyTasks.Children[row] is DailyTaskUserControl dailyTaskUserControl)
+                                        {
+                                            dailyTaskUserControl.Time = time;
+                                            dailyTaskUserControl.Title = title;
+                                        }
+
+                                        row++;
+                                    }
+                                });
+                            }
+                        }
+                        conn.Close();        
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log, show error message)
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                });
+            }
+        }
+
+
+        private void pomodoroBreak()
+        {
+            currentTimeInSeconds = pomodoroBreakInSecond;
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            //TimerTitle.Content = "Rest well...";
+            UpdateTimerDisplay();
+            isRest = false;
+            timer.Start();
+            isDefault = false;
+        }
+        private void pomodoroDefault()
+        {
+            currentTimeInSeconds = pomodoroTimeInSeconds;
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            //TimerTitle.Content = "Pomodoro starting...";
+            UpdateTimerDisplay();
+            isRest = true;
+            timer.Start();
+            isDefault = true;
+        }
+
+        private void timerDone(string text, bool type)
+        {
+            timer.Stop();
+            Timerbg.Fill = new SolidColorBrush(Colors.LightPink);
+            MessageBoxResult result = MessageBox.Show(text, "Timer Alert", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                Timerbg.Fill = new SolidColorBrush(Colors.LightBlue);
+                if (type == true)
+                {
+                    pomodoroBreak();
+                }
+                else if (type == false)
+                {
+                    pomodoroDefault();
+                    timer.Start();
+                }
+            }
+            else
+            {
+                Timerbg.Fill = new SolidColorBrush(Colors.LightBlue);
+                //TimerTitle.Content = "Pomodoro Timer";
+            }
+        }
+        private void InitializeTimer()
+        {
+            currentTimeInSeconds = initialTimeInSeconds;
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer_Tick;
+            UpdateTimerDisplay();
+        }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (currentTimeInSeconds > 0)
+            {
+                currentTimeInSeconds--;
+                UpdateTimerDisplay();
+            }
+            else
+            {
+                if (isDefault == true)
+                {
+                    timerDone("Start resting?", true);
+                }
+                else if (isDefault == false)
+                {
+                    timerDone("Restart pomodoro?", false);
+                }
+            }
+        }
+        private void UpdateTimerDisplay()
+        {
+            TimeSpan timeSpan = TimeSpan.FromSeconds(currentTimeInSeconds);
+            TimerLabel.Content = timeSpan.ToString(@"hh\:mm\:ss");
+        }
+
+        private void OnButtonStart(object sender, RoutedEventArgs e)
+        {
+            if (!timer.IsEnabled)
+            {
+                pomodoroDefault();
+            }
+        }
+
+        private void OnButtonStop(object sender, RoutedEventArgs e)
+        {
+            if (timer.IsEnabled)
+            {
+                timer.Stop();
+            }
+        }
+
+        private void ShortBreak_Checked(object sender, RoutedEventArgs e)
+        {
+            pomodoroBreakInSecond = pomodoroShortBreakInSeconds;
+        }
+
+        private void LongBreak_Checked(object sender, RoutedEventArgs e)
+        {
+            pomodoroBreakInSecond = pomodoroLongBreakInSeconds;
         }
     }
 }

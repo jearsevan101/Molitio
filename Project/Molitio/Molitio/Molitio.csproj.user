@@ -16,10 +16,16 @@
     <Compile Update="NewMainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\UserControls\DailyTaskUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\UserControls\NotePreview.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\UserControls\Task.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserControls\ToDoListUserControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -39,10 +45,16 @@
     <Page Update="Theme\MenuButtonTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\UserControls\DailyTaskUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\UserControls\NotePreview.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\UserControls\Task.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserControls\ToDoListUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
