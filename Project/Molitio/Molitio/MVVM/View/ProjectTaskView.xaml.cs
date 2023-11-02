@@ -12,25 +12,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Molitio
+namespace Molitio.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for NewDailyTask.xaml
+    /// Interaction logic for ProjectTaskView.xaml
     /// </summary>
-    public partial class NewDailyTask : Window
+    public partial class ProjectTaskView : Window
     {
-        public NewDailyTask()
+        public ProjectTaskView()
         {
             InitializeComponent();
         }
 
-        private void btnAddDailyTask_Click(object sender, RoutedEventArgs e)
+        private void switchIndividual_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
 
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnSaveProject_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
 
         }
     }

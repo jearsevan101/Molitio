@@ -7,10 +7,22 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="MVVM\View\AddProjectNameView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\DailyTaskView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\IndividualTaskView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\View\NotebookView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\ProductivityView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MVVM\View\ProjectTaskView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="NewMainWindow.xaml.cs">
@@ -33,10 +45,22 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MVVM\View\AddProjectNameView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\DailyTaskView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\IndividualTaskView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MVVM\View\NotebookView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\ProductivityView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\ProjectTaskView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="NewMainWindow.xaml">

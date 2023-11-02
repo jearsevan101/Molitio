@@ -12,20 +12,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Molitio
+namespace Molitio.MVVM.View
 {
     /// <summary>
-    /// Interaction logic for TaskLists.xaml
+    /// Interaction logic for IndividualTaskView.xaml
     /// </summary>
-    public partial class TaskLists : Window
+    public partial class IndividualTaskView : Window
     {
-        public TaskLists()
+        public IndividualTaskView()
         {
             InitializeComponent();
         }
 
-        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        private void btnAddTask_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+
+        }
+
+        private void switchProject_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
 
         }
     }
