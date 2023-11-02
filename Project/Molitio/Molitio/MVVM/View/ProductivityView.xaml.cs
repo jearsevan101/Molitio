@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using Npgsql;
 using System.Data;
+using System.Data.SqlClient;
 using Molitio.View.UserControls;
 
 namespace Molitio.MVVM.View
@@ -34,12 +35,13 @@ namespace Molitio.MVVM.View
         private bool isDefault;
         private DispatcherTimer timer;
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";
+        /*string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";*/
+        string connstring = "Host=localhost; Port=5432; Username=postgres; Password=psql; Database=junpro";
         public ProductivityView()
         {
             InitializeComponent();
             InitializeTimer();
-            PopulateDailyTasksFromDatabase();
+            /*PopulateDailyTasksFromDatabase();*/
         }
         
         private void PopulateDailyTasksFromDatabase()
@@ -197,6 +199,40 @@ namespace Molitio.MVVM.View
         private void LongBreak_Checked(object sender, RoutedEventArgs e)
         {
             pomodoroBreakInSecond = pomodoroLongBreakInSeconds;
+        }
+
+        private void btnAddToDoList_Click(object sender, RoutedEventArgs e)
+        {
+            IndividualTaskView individualTaskView = new IndividualTaskView();
+        }
+
+        private void btnAddNote_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {   
+                using (conn = new NpgsqlConnection(connstring))
+                {
+                    conn.Open();
+                    using (NpgsqlCommand cmd = new NpgsqlCommand("select * from notes_insert(:_noteTitle,:_noteDesc,:_noteDate::date)", conn))
+                    {
+                        cmd.Parameters.AddWithValue("_noteTitle", tbNoteTitle.Text);
+                        cmd.Parameters.AddWithValue("_noteDesc", tbNoteDesc.Text);
+                        cmd.Parameters.AddWithValue("_noteDate", SqlDbType.Date);
+                        cmd.Parameters["_noteDate"].Value = DateTime.Now.Date;
+
+                        if ((int)cmd.ExecuteScalar() == 1)
+                        {
+                            MessageBox.Show("Data Has Been Successfully Inputed", "Well Done!", MessageBoxButton.OK, MessageBoxImage.Information);
+                            conn.Close();
+                            tbNoteTitle.Text = tbNoteDesc.Text = null;
+                        }
+                    }    
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error:" + ex.Message, "Insert FAIL", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
