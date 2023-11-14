@@ -22,10 +22,10 @@
                 <Label Content="{Binding Time, ElementName=root}" FontSize="8"/>
             </Grid>
             <Grid Grid.Column="1">
-                <Button Height="10" Width="10" Content="E" FontSize="5"/>
+                <Button x:Name="btnEdit" Height="10" Width="10" Content="E" FontSize="5"/>
             </Grid>
             <Grid Grid.Column="2">
-                <Button Height="10" Width="10" Content="D" FontSize="5"/>
+                <Button x:Name="btnDelete" Height="10" Width="10" Content="D" FontSize="5"/>
             </Grid>
         </Grid>
         <Grid Grid.Row="1">

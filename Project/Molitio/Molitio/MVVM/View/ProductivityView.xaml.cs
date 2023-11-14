@@ -17,6 +17,7 @@ using Npgsql;
 using System.Data;
 using System.Data.SqlClient;
 using Molitio.View.UserControls;
+using System.Data.Common;
 
 namespace Molitio.MVVM.View
 {
@@ -35,114 +36,84 @@ namespace Molitio.MVVM.View
         private bool isDefault;
         private DispatcherTimer timer;
         private NpgsqlConnection conn;
+        private ConnectionToDB connectionToDB;
         string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";
         /*string connstring = "Host=localhost; Port=5432; Username=postgres; Password=psql; Database=junpro";*/
         public ProductivityView()
         {
             InitializeComponent();
             InitializeTimer();
+            connectionToDB = new ConnectionToDB();
+            connectionToDB.DataUpdated += ConnectionToDB_DataUpdated;
             PopulateDailyTasksFromDatabase();
             PopulateToDoListFromDatabase();
         }
-        
+
+        private void ConnectionToDB_DataUpdated(object? sender, EventArgs e)
+        {
+            PopulateDailyTasksFromDatabase();
+            PopulateToDoListFromDatabase();
+        }
+
         private void PopulateDailyTasksFromDatabase()
         {
             try
             {
-                if (gridDailyTasks != null)
+                List<DailyTask> tasks = connectionToDB.GetDailyTasks();
+                int row = 0;
+                foreach (var task in tasks)
                 {
-                    using (conn = new NpgsqlConnection(connstring))
+                    // Update UI elements (e.g., labels) with task.Time and task.Title
+                    // ...
+                    if (task.isDone == false)
                     {
-                        conn.Open();
-
-                        using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM dailyTask_select()", conn))
+                        if (gridDailyTasks.Children[row] is DailyTaskUserControl dailyTaskUserControl)
                         {
-                            using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                            {
-                                Application.Current.Dispatcher.Invoke(() =>
-                                {
-                                    int row = 0;
-                                    while (reader.Read() && row < gridDailyTasks.Children.Count)
-                                    {
-                                        string time = reader["tasktime"].ToString();
-                                        string title = reader["taskname"].ToString();
-
-                                        // Ensure gridDailyTasks has enough children before accessing them
-                                        if (gridDailyTasks.Children[row] is DailyTaskUserControl dailyTaskUserControl)
-                                        {
-                                            dailyTaskUserControl.Time = time;
-                                            dailyTaskUserControl.Title = title;
-                                            dailyTaskUserControl.Visibility = Visibility.Visible;
-                                        }
-
-                                        row++;
-                                    }
-                                });
-                            }
+                            dailyTaskUserControl.Time = task.Time;
+                            dailyTaskUserControl.Title = task.Title;
+                            dailyTaskUserControl.Id = task.Id;
+                            dailyTaskUserControl.Visibility = Visibility.Visible;
                         }
-                        conn.Close();        
+                        row++;
                     }
                 }
             }
             catch (Exception ex)
             {
                 // Handle exceptions (e.g., log, show error message)
-                Application.Current.Dispatcher.Invoke(() =>
-                {
-                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                });
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
         }
 
         private void PopulateToDoListFromDatabase()
         {
             try
             {
-                if (gridToDoList != null)
+                List<ToDoList> toDos = connectionToDB.GetToDoList();
+                int row = 0;
+                foreach (var todo in toDos)
                 {
-                    using (conn = new NpgsqlConnection(connstring))
+                    // Update UI elements (e.g., labels) with task.Time and task.Title
+                    // ...
+                    if (todo.isDone == false)
                     {
-                        conn.Open();
-
-                        using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM toDoList_select()", conn))
+                        if (gridToDoList.Children[row] is ToDoListUserControl toDoListUserControl)
                         {
-                            using (NpgsqlDataReader reader = cmd.ExecuteReader())
-                            {
-                                Application.Current.Dispatcher.Invoke(() =>
-                                {
-                                    int row = 0;
-                                    while (reader.Read() && row < gridToDoList.Children.Count)
-                                    {
-                                        string taskName = reader["taskName"].ToString();
-                                        string taskDesc = reader["taskDesc"].ToString();
-                                        string dateTask = reader["taskDate"].ToString(); // You may need to convert it to the desired date format
-                                        bool isDone = Convert.ToBoolean(reader["isDone"]);
-
-                                        // Ensure gridToDoList has enough children before accessing them
-                                        if (gridToDoList.Children[row] is ToDoListUserControl toDoListUserControl)
-                                        {
-                                            toDoListUserControl.TaskName = taskName;
-                                            toDoListUserControl.DateTask = dateTask;
-                                            toDoListUserControl.TaskDescription = taskDesc;
-                                            toDoListUserControl.Visibility = Visibility.Visible;
-                                        }
-
-                                        row++;
-                                    }
-                                });
-                            }
+                            toDoListUserControl.TaskName = todo.Title;
+                            toDoListUserControl.DateTask = todo.Time;
+                            toDoListUserControl.Id = todo.Id;
+                            toDoListUserControl.TaskDescription = todo.Description;
+                            toDoListUserControl.Visibility = Visibility.Visible;
                         }
-                        conn.Close();
+                        row++;
                     }
                 }
             }
             catch (Exception ex)
             {
                 // Handle exceptions (e.g., log, show error message)
-                Application.Current.Dispatcher.Invoke(() =>
-                {
-                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                });
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
         private void pomodoroBreak()
@@ -255,7 +226,8 @@ namespace Molitio.MVVM.View
 
         private void btnAddToDoList_Click(object sender, RoutedEventArgs e)
         {
-            IndividualTaskView individualTaskView = new IndividualTaskView();
+            AddToDoList addToDoList = new AddToDoList();
+            addToDoList.ShowDialog();
         }
 
         private void btnAddNote_Click(object sender, RoutedEventArgs e)
@@ -278,13 +250,20 @@ namespace Molitio.MVVM.View
                             conn.Close();
                             tbNoteTitle.Text = tbNoteDesc.Text = null;
                         }
-                    }    
+                    }   
                 }
+                conn.Close();
             }
             catch(Exception ex)
             {
                 MessageBox.Show("Error:" + ex.Message, "Insert FAIL", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void btnAddDailyTask_Click(object sender, RoutedEventArgs e)
+        {
+            AddDailyTask addDailyTask= new AddDailyTask();
+            addDailyTask.ShowDialog();
         }
     }
 }

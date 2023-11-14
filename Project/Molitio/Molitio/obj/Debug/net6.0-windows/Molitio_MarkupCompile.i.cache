@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 E:\Junpro temp per8\4\Molitio\Project\Molitio\Molitio\App.xaml
-14408295022
+161853250388
 
-27-1657036358
+31568464878
 1961011533015
-MainWindow.xaml;MVVM\View\AddProjectNameView.xaml;MVVM\View\DailyTaskView.xaml;MVVM\View\IndividualTaskView.xaml;MVVM\View\NotebookView.xaml;MVVM\View\ProductivityView.xaml;MVVM\View\ProjectTaskView.xaml;NewMainWindow.xaml;Theme\MenuButtonTheme.xaml;View\UserControls\DailyTaskUserControl.xaml;View\UserControls\NotePreview.xaml;View\UserControls\Task.xaml;View\UserControls\TaskLists.xaml;View\UserControls\ToDoListUserControl.xaml;
+AddDailyTask.xaml;AddToDoList.xaml;MainWindow.xaml;MVVM\View\AddProjectNameView.xaml;MVVM\View\DailyTaskView.xaml;MVVM\View\IndividualTaskView.xaml;MVVM\View\NotebookView.xaml;MVVM\View\ProductivityView.xaml;MVVM\View\ProjectTaskView.xaml;NewMainWindow.xaml;Theme\MenuButtonTheme.xaml;View\UserControls\DailyTaskUserControl.xaml;View\UserControls\NotePreview.xaml;View\UserControls\Task.xaml;View\UserControls\TaskLists.xaml;View\UserControls\ToDoListUserControl.xaml;
 
 True
 
