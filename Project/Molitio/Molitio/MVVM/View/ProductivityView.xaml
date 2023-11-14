@@ -60,21 +60,21 @@
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <userControls:DailyTaskUserControl Grid.Row="0" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
-                    <userControls:DailyTaskUserControl Grid.Row="1" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
-                    <userControls:DailyTaskUserControl Grid.Row="2" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
-                    <userControls:DailyTaskUserControl Grid.Row="3" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
-                    <userControls:DailyTaskUserControl Grid.Row="4" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
-                    <userControls:DailyTaskUserControl Grid.Row="5" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
-                    <userControls:DailyTaskUserControl Grid.Row="6" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
-                    <userControls:DailyTaskUserControl Grid.Row="7" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
-                    <userControls:DailyTaskUserControl Grid.Row="8" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
-                    <userControls:DailyTaskUserControl Grid.Row="9" Time="13:00 WIB" Title="Lari pagi" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="0" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="1" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="2" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="3" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="4" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="5" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="6" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="7" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="8" Visibility="Hidden"/>
+                    <userControls:DailyTaskUserControl Grid.Row="9" Visibility="Hidden"/>
                 </Grid>
                 <Grid Grid.Row="2">
                     <Button x:Name="btnAddDailyTask" HorizontalAlignment="Center" FontSize="20"
                         VerticalAlignment="Center" Width="120" Height="35"  
-                        Content="Add New"/>
+                        Content="Add New" Click="btnAddDailyTask_Click"/>
                 </Grid>
             </Grid>
             <Grid Grid.Column="2" >
@@ -109,12 +109,12 @@
                                 <RowDefinition />
                                 <RowDefinition />
                             </Grid.RowDefinitions>
-                            <userControls:ToDoListUserControl Grid.Row="0" TaskName="Task 1" DateTask="2 November 2023" TaskDescription="Rekayasa data kerjain datacamp" Visibility="Hidden"/>
-                            <userControls:ToDoListUserControl Grid.Row="1" TaskName="Task 1" DateTask="2 November 2023" TaskDescription="Rekayasa data kerjain datacamp" Visibility="Hidden"/>
-                            <userControls:ToDoListUserControl Grid.Row="2" TaskName="Task 1" DateTask="2 November 2023" TaskDescription="Rekayasa data kerjain datacamp" Visibility="Hidden"/>
-                            <userControls:ToDoListUserControl Grid.Row="3" TaskName="Task 1" DateTask="2 November 2023" TaskDescription="Rekayasa data kerjain datacamp" Visibility="Hidden"/>
-                            <userControls:ToDoListUserControl Grid.Row="4" TaskName="Task 1" DateTask="2 November 2023" TaskDescription="Rekayasa data kerjain datacamp" Visibility="Hidden"/>
-                            <userControls:ToDoListUserControl Grid.Row="5" TaskName="Task 1" DateTask="2 November 2023" TaskDescription="Rekayasa data kerjain datacamp" Visibility="Hidden"/>
+                            <userControls:ToDoListUserControl Grid.Row="0" Visibility="Hidden"/>
+                            <userControls:ToDoListUserControl Grid.Row="1" Visibility="Hidden"/>
+                            <userControls:ToDoListUserControl Grid.Row="2" Visibility="Hidden"/>
+                            <userControls:ToDoListUserControl Grid.Row="3" Visibility="Hidden"/>
+                            <userControls:ToDoListUserControl Grid.Row="4" Visibility="Hidden"/>
+                            <userControls:ToDoListUserControl Grid.Row="5" Visibility="Hidden"/>
                         </Grid>
                         <Grid Grid.Row="2">
                             <Button x:Name="btnAddToDoList" Grid.Row="2" HorizontalAlignment="Center" FontSize="20"

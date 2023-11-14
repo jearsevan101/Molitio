@@ -1,0 +1,21 @@
+﻿<Window x:Class="Molitio.AddToDoList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Molitio"
+        mc:Ignorable="d"
+        Title="AddToDoList" Height="255" Width="250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="3" x:Name="btnAddTask" Content="Add Task" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230"  Height="20" Click="btnAddTask_Click"/>
+        <TextBox Grid.Row="0" x:Name="tbTaskName" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Task Name..." VerticalAlignment="Center" Width="230" Height="23" MouseDoubleClick="tbTaskName_MouseDoubleClick" />
+        <TextBox Grid.Row="2" x:Name="tbDescription" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Description..." VerticalAlignment="Center" Width="230" Height="93" MouseDoubleClick="tbDescription_MouseDoubleClick"/>
+        <DatePicker Grid.Row="1" x:Name="dlTask" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="230"/>
+    </Grid>
+</Window>

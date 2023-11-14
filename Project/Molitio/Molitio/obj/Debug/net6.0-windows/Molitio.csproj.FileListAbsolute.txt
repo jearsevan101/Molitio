@@ -246,3 +246,7 @@ E:\Junpro temp per8\4\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\r
 E:\Junpro temp per8\4\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.pdb
 E:\Junpro temp per8\4\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\Molitio.genruntimeconfig.cache
 E:\Junpro temp per8\4\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\ref\Molitio.dll
+E:\Junpro temp per8\4\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\AddDailyTask.g.cs
+E:\Junpro temp per8\4\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\AddDailyTask.baml
+E:\Junpro temp per8\4\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\AddToDoList.g.cs
+E:\Junpro temp per8\4\Molitio\Project\Molitio\Molitio\obj\Debug\net6.0-windows\AddToDoList.baml

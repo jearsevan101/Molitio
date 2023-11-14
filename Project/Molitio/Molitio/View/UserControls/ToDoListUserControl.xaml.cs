@@ -20,7 +20,10 @@ namespace Molitio.View.UserControls
     /// </summary>
     public partial class ToDoListUserControl : UserControl
     {
-
+        private ConnectionToDB connectionToDB;
+        private AddToDoList addToDoList;
+        public int Id{get; set;}
+        public bool isDone{get; set;}
         public string TaskName
         {
             get { return (string)GetValue(TaskNameProperty); }
@@ -59,6 +62,40 @@ namespace Molitio.View.UserControls
         public ToDoListUserControl()
         {
             InitializeComponent();
+            btnEdit.Click += BtnEdit_Click;
+            btnDelete.Click += BtnDelete_Click;
+            connectionToDB = new ConnectionToDB();
+            addToDoList = new AddToDoList();
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            int taskId = Id; // retrieve the task ID associated with the button (you need to store it when populating the UI)
+
+            // Ask the user for confirmation
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to delete this ToDoList task?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                // User clicked "Yes," so delete the ToDoList task
+                connectionToDB.DeleteToDoListTask(taskId);
+            }
+            else
+            {
+                // User clicked "No" or closed the MessageBox, display a different message
+                MessageBox.Show("Deletion canceled.", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            int taskId = Id;
+            string oldTaskName = TaskName;
+            string oldTaskTime = DateTask;
+            string oldDescription = TaskDescription;
+            DateTime dateTime = DateTime.Parse(oldTaskTime);
+            bool oldIsDone = isDone;
+            addToDoList.UpdateData(taskId, oldTaskName,oldDescription, dateTime, oldIsDone);
         }
     }
 }
