@@ -132,19 +132,18 @@
                         <ColumnDefinition Width="200"/>
                         <ColumnDefinition Width="200"/>
                     </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" >Select BGM</Label>
-                    <Grid Grid.Column="1" Background="DarkGray">
-                        <Label FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" >A</Label>
-                    </Grid>
-                    <Grid Grid.Column="2" Background="#E6E6E6">
-                        <Label FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" >B</Label>
-                    </Grid>
-                    <Grid Grid.Column="3" Background="#E6E6E6">
-                        <Label FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" >C</Label>
-                    </Grid>
-                    <Grid Grid.Column="4" Background="#E6E6E6">
-                        <Label FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" >D</Label>
-                    </Grid>
+                    <MediaElement x:Name="mediaElement" LoadedBehavior="Manual" />
+                    
+                    <Button x:Name="btStop" Grid.Column="0" Content="Stop BGM" FontSize="24" Background="Red" Foreground="white" FontStyle="Italic" Click="btStop_Click">
+                    </Button>
+                    <Button x:Name="btFirePlace" Grid.Column="1" Content="Fire Place" FontSize="24" Click="btFirePlace_Click" >
+                    </Button>
+                    <Button x:Name="btForrest" Grid.Column="2" Content="Forrest" FontSize="24" Click="btForrest_Click">
+                    </Button>
+                    <Button x:Name="btOcean" Grid.Column="3" Content="Ocean" FontSize="24" Click="btOcean_Click">
+                    </Button>
+                    <Button x:Name="btLofi" Grid.Column="4" Content="LoFi" FontSize="24" Click="btLofi_Click">
+                    </Button>
                 </Grid>
             </Grid>
         </Grid>
