@@ -38,7 +38,9 @@ namespace Molitio.MVVM.View
         private DispatcherTimer timer;
         private NpgsqlConnection conn;
         private ConnectionToDB connectionToDB;
-        string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";
+        //string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";
+        string connstring = "Host=rain.db.elephantsql.com; Port=5432; Username=vsuvdxqk; Password=N0RNrStZzPjdawPEwqNnA5NtGhhZO-Da; Database=vsuvdxqk;";
+
         /*string connstring = "Host=localhost; Port=5432; Username=postgres; Password=psql; Database=junpro";*/
         public ProductivityView()
         {

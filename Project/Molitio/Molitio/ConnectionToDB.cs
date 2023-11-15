@@ -16,7 +16,9 @@ namespace Molitio
     {
         private NpgsqlConnection conn;
         public event EventHandler DataUpdated;
-        string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";
+        //string connstring = "Host=localhost; Port=5432; Username=postgres; Password=postgresql1Evan; Database=MolitioDatabase";
+        string connstring = "Host=rain.db.elephantsql.com; Port=5432; Username=vsuvdxqk; Password=N0RNrStZzPjdawPEwqNnA5NtGhhZO-Da; Database=vsuvdxqk;";
+
 
         public ConnectionToDB()
         {
