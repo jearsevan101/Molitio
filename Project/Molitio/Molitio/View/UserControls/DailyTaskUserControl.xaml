@@ -34,7 +34,7 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                <CheckBox HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center"/>
+                <CheckBox HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Checked="CheckBox_Checked"/>
             </Grid>
             <Grid Grid.Column="1">
                 <Label Content="{Binding Title, ElementName=root}" FontSize="10"/>
