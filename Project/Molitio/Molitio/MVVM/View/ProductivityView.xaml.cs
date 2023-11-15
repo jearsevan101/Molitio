@@ -18,6 +18,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Molitio.View.UserControls;
 using System.Data.Common;
+using System.Diagnostics;
 
 namespace Molitio.MVVM.View
 {
@@ -54,7 +55,6 @@ namespace Molitio.MVVM.View
             PopulateDailyTasksFromDatabase();
             PopulateToDoListFromDatabase();
         }
-
         private void PopulateDailyTasksFromDatabase()
         {
             try

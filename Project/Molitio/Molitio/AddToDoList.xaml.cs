@@ -52,6 +52,7 @@ namespace Molitio
 
                     // Call the AddTask method from ConnectionToDB
                     connectionToDB.UpdateToDoList(idTask, taskName, description, taskDate, isDone);
+                    isNew= true;
                     this.Close();
                 }
                 else

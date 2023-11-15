@@ -97,5 +97,20 @@ namespace Molitio.View.UserControls
             bool oldIsDone = isDone;
             addToDoList.UpdateData(taskId, oldTaskName,oldDescription, dateTime, oldIsDone);
         }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            int taskId = Id;
+            bool IsDone = true;
+            MessageBoxResult result = MessageBox.Show("Are you sure you have finished this todolist?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                connectionToDB.UpdateIsDoneStatus(taskId, IsDone, true);
+            }
+            else
+            {
+                MessageBox.Show("todolist task canceled to be done.", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
     }
 }

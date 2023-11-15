@@ -22,7 +22,7 @@ namespace Molitio
         {
             conn = new NpgsqlConnection(connstring);
         }
-        protected virtual void OnDataUpdated()
+        private void OnDataUpdated()
         {
             DataUpdated?.Invoke(this, EventArgs.Empty);
         }
@@ -137,6 +137,7 @@ namespace Molitio
                     cmd.ExecuteNonQuery();
                 }
                 MessageBox.Show("Insert successful", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                OnDataUpdated();
             }
             catch (Exception ex)
             {
@@ -233,6 +234,7 @@ namespace Molitio
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Daily task updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        OnDataUpdated();
                     }
                     else
                     {
@@ -267,6 +269,7 @@ namespace Molitio
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("ToDoList task updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        OnDataUpdated();
                     }
                     else
                     {
@@ -284,5 +287,47 @@ namespace Molitio
                 conn.Close();
             }
         }
+        public void UpdateIsDoneStatus(int taskId, bool newIsDone, bool isTodolist)
+        {
+            try
+            {
+                conn.Open();
+                string updateQuery;
+                if (isTodolist)
+                {
+                    updateQuery = "UPDATE todolist SET isdone = @newIsDone WHERE id_todolist = @taskId"; ;
+                }
+                else
+                {
+                    updateQuery = "UPDATE dailytask SET isdone = @newIsDone WHERE id_dailytask = @taskId";
+                }
+                using (NpgsqlCommand cmd = new NpgsqlCommand(updateQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@taskId", taskId);
+                    cmd.Parameters.AddWithValue("@newIsDone", newIsDone);
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("IsDone status updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        OnDataUpdated();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No rows were updated. Data with the specified ID may not exist.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log, throw custom exception)
+                MessageBox.Show($"Error updating IsDone status: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
     }
 }
