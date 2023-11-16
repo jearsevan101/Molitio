@@ -5,41 +5,36 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Molitio.View.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="160" d:DesignWidth="176">
+             d:DesignHeight="226" d:DesignWidth="276">
     <Border 
-                            Width="176"
-                            Height="160"
-                            Margin="0,0,0,0"
+                            Width="260"
+                            Height="210"
+                            Margin="6"
                             Background="White">
 
         <Border.Clip>
             <RectangleGeometry RadiusX="4"
                            RadiusY="4"
-                           Rect="0,0,176,160"/>
+                           Rect="0,0,260,210"/>
         </Border.Clip>
         <Grid>
-            <StackPanel Height="28"
-                                        VerticalAlignment="Bottom"
-                                        Background="#4EC3F5" Margin="0,112,0,0">
+            <StackPanel Height="28" VerticalAlignment="Bottom" Background="#4EC3F5" Margin="0,112,0,0">
 
             </StackPanel>
-            <StackPanel Height="120"
-                                        VerticalAlignment="Top"
-                                        Background="White">
-                <TextBox Text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperia"
-                                         TextWrapping="Wrap"
-                                         IsReadOnly="True"
-                                         FontSize="14"
-                                         Height="106"
-                                         Margin="8,10,8,4"
-                                         BorderThickness="0"/>
+            <StackPanel Height="181" VerticalAlignment="Top" Background="White">
+                <TextBox Text="{Binding NoteDesc}"
+                         TextWrapping="Wrap"
+                         IsReadOnly="True"
+                         FontSize="14"
+                         Height="165"
+                         Margin="8,10,8,4"
+                         BorderThickness="0"/>
 
             </StackPanel>
-            <TextBlock Text="Lorem Ipsum"
-                           VerticalAlignment="Bottom"
-                           Margin="8,0,8,7"
-                           FontSize="12"/>
-
+            <TextBlock Text="{Binding NoteTitle}"
+                       VerticalAlignment="Bottom"
+                       Margin="8,0,8,7"
+                       FontSize="12"/>
         </Grid>
     </Border>
 </UserControl>

@@ -62,6 +62,42 @@ namespace Molitio
 
             return tasks;
         }
+
+        public List<NoteItem> GetNoteItemsFromDatabase()
+        {
+            List<NoteItem> item = new List<NoteItem>();
+            try
+            {
+                conn.Open();
+                using (NpgsqlCommand cmd = new NpgsqlCommand("SELECT * FROM Notes_select()", conn))
+                {
+                    using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            int id = reader.GetInt32(reader.GetOrdinal("id_notes"));
+                            string title = reader["notetitle"].ToString();
+                            string desc = reader["notedesc"].ToString();
+                            string date = reader["notedate"].ToString();
+
+                            item.Add(new NoteItem {NoteTitle = title,NoteDesc = desc, NoteDate = date });
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log, throw custom exception)
+                throw new Exception($"Error retrieving daily tasks: {ex.Message}");
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return item;
+        }
+
         public List<ToDoList> GetToDoList()
         {
             List<ToDoList> toDo = new List<ToDoList>();
