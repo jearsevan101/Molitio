@@ -79,8 +79,9 @@ namespace Molitio
                             string title = reader["notetitle"].ToString();
                             string desc = reader["notedesc"].ToString();
                             string date = reader["notedate"].ToString();
+                            
 
-                            item.Add(new NoteItem {NoteTitle = title,NoteDesc = desc, NoteDate = date });
+                            item.Add(new NoteItem {NoteTitle = title,NoteDesc = desc, NoteDate = date, NotesID = id });
                         }
                     }
                 }
@@ -366,6 +367,40 @@ namespace Molitio
                 conn.Close();
             }
         }
+        public void DeleteNote(int noteId)
+        {
+            try
+            {
+                conn.Open();
+                string deleteQuery = "SELECT notes_delete(@noteId)";
+                using (NpgsqlCommand cmd = new NpgsqlCommand(deleteQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@noteId", noteId);
+                    int result = (int)cmd.ExecuteScalar();
+                    if (result == 1)
+                    {
+                        // Notify that data has been updated
+                        OnDataUpdated();
+                        MessageBox.Show("Note deleted successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                    else
+                    {
+                        // Handle the case where the note was not found (result == 0)
+                        MessageBox.Show("Note not found.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log, throw custom exception)
+                throw new Exception($"Error deleting note: {ex.Message}");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
 
     }
 }

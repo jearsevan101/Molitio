@@ -60,7 +60,6 @@ namespace Molitio
                 {
                     // Format the time string as "HH:mm:ss"
                     string taskTime = $"{hours:D2}:{minutes:D2}:00";
-                    MessageBox.Show(idTask + taskName + taskTime + isDone);
                     connectionToDB.UpdateDailyTask(idTask, taskName, taskTime, isDone);
                     isNew = true;
                     this.Close();

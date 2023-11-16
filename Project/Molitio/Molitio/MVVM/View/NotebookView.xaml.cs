@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Molitio.View.UserControls;
+
 
 namespace Molitio.MVVM.View
 {
@@ -28,6 +30,10 @@ namespace Molitio.MVVM.View
 
             connectionToDB = new ConnectionToDB();
 
+            updateData();
+        }
+        private void updateData()
+        {
             // Initialize your collection with data from the database
             List<NoteItem> NoteItems = connectionToDB.GetNoteItemsFromDatabase();
 
@@ -42,6 +48,7 @@ namespace Molitio.MVVM.View
                 var notePreview = new NotePreview
                 {
                     NoteTitle = noteItem.NoteTitle,
+                    NotesID = noteItem.NotesID,
                     NoteDesc = noteItem.NoteDesc // Format as needed
                 };
 
@@ -61,9 +68,15 @@ namespace Molitio.MVVM.View
                 }
             }
         }
+        private void btnRefresh_Click(object sender, RoutedEventArgs e)
+        {
 
+            // Clear existing UI elements
+            YourWrapPanel.Children.Clear();
 
-        
+            updateData();
+        }
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {

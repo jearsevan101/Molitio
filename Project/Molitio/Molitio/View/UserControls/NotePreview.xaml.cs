@@ -20,6 +20,8 @@ namespace Molitio.View.UserControls
     /// </summary>
     public partial class NotePreview : UserControl
     {
+        private ConnectionToDB connectionToDB;
+        public int NotesID { get; set; }
         public static readonly DependencyProperty NoteTitleProperty =
             DependencyProperty.Register("NoteTitle", typeof(string), typeof(NotePreview));
 
@@ -41,7 +43,25 @@ namespace Molitio.View.UserControls
         public NotePreview()
         {
             InitializeComponent();
+            connectionToDB = new ConnectionToDB();
             DataContext = this;
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            int Id = NotesID;
+            MessageBoxResult result = MessageBox.Show("Are you sure you want to delete this notes?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                // User clicked "Yes," so delete the ToDoList task
+                connectionToDB.DeleteNote(Id);
+            }
+            else
+            {
+                // User clicked "No" or closed the MessageBox, display a different message
+                MessageBox.Show("Deletion canceled.", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }

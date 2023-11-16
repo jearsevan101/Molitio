@@ -8,7 +8,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1240">
     <Grid>
-        
+        <Button x:Name="btnRefresh" HorizontalAlignment="Right" FontSize="10"
+                        VerticalAlignment="Top" Width="40" Height="25"  Margin ="0,0,15,0"
+                        Content="Refresh" Click="btnRefresh_Click" />
 
         
 

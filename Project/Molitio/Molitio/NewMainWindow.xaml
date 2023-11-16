@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Molitio"
         xmlns:viewModel="clr-namespace:Molitio.MVVM.ViewModel"
         mc:Ignorable="d"
-        Title="NewMainWindow" Height="720" Width="1280"
+        Title="NewMainWindow" Height="740" Width="1300"
         WindowStyle= "ThreeDBorderWindow"
         ResizeMode="CanResize"
         Background="Transparent"

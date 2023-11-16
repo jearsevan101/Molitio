@@ -31,11 +31,11 @@ namespace Molitio.MVVM.View
     public partial class ProductivityView : UserControl
     {
         private SoundController soundController;
-        private int initialTimeInSeconds = 5; // Initial time in seconds
+        private int initialTimeInSeconds = 1500; // Initial time in seconds
         private int currentTimeInSeconds;
-        private int pomodoroTimeInSeconds = 5;
-        private int pomodoroShortBreakInSeconds = 3;
-        private int pomodoroLongBreakInSeconds = 9;
+        private int pomodoroTimeInSeconds = 1500;
+        private int pomodoroShortBreakInSeconds = 300;
+        private int pomodoroLongBreakInSeconds = 900;
         private int pomodoroBreakInSecond;
         private bool isRest;
         private bool isDefault;
@@ -85,6 +85,13 @@ namespace Molitio.MVVM.View
                         row++;
                     }
                 }
+                for (int i = row; i < tasks.Count; i++)
+                {
+                    if (gridDailyTasks.Children[i] is DailyTaskUserControl dailyTaskUserControl)
+                    {
+                        dailyTaskUserControl.Visibility = Visibility.Hidden;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -115,6 +122,13 @@ namespace Molitio.MVVM.View
                             toDoListUserControl.Visibility = Visibility.Visible;
                         }
                         row++;
+                    }
+                }
+                for (int i = row; i < toDos.Count; i++)
+                {
+                    if (gridToDoList.Children[i] is ToDoListUserControl toDoListUserControl)
+                    {
+                        toDoListUserControl.Visibility = Visibility.Hidden;
                     }
                 }
             }
@@ -297,6 +311,22 @@ namespace Molitio.MVVM.View
         private void btLofi_Click(object sender, RoutedEventArgs e)
         {
             soundController.Play("https://cs1100320016d775b19.blob.core.windows.net/junpro/Lofi.wav?sv=2023-01-03&st=2023-11-15T18%3A20%3A44Z&se=2024-11-16T18%3A20%3A00Z&sr=b&sp=r&sig=%2FfEKmydPYrexASuKEj152JHYHowzstvTe10TDY3ZpVc%3D");
+        }
+
+        private void btnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            PopulateDailyTasksFromDatabase();
+            PopulateToDoListFromDatabase();
+        }
+
+        private void tbTitleClicked(object sender, MouseButtonEventArgs e)
+        {
+            tbNoteTitle.Text = "";
+        }
+
+        private void tbBodyClicked(object sender, MouseButtonEventArgs e)
+        {
+            tbNoteDesc.Text = "";
         }
     }
 }
