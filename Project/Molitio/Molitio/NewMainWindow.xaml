@@ -7,10 +7,10 @@
         xmlns:viewModel="clr-namespace:Molitio.MVVM.ViewModel"
         mc:Ignorable="d"
         Title="NewMainWindow" Height="720" Width="1280"
-        WindowStyle= "None"
-        ResizeMode="NoResize"
+        WindowStyle= "ThreeDBorderWindow"
+        ResizeMode="CanResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="False">
 
     <Window.DataContext>
         <viewModel:MainViewModel/>

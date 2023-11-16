@@ -42,7 +42,7 @@
                     </Grid>
                 </Grid>
                 <Grid Grid.Row="1">
-                    <Label Content="{Binding DateTask, ElementName=root, StringFormat='Due: {0}'}" FontSize="5" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.RowSpan="1"/>
+                    <Label Content="{Binding DateTask, ElementName=root, StringFormat='Due: {0}'}" FontSize="6" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.RowSpan="1"/>
                 </Grid>
             </Grid>
         </Grid>
