@@ -12,6 +12,9 @@
     <Compile Update="AddDailyTask.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AddNote.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AddToDoList.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -51,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddDailyTask.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddNote.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddToDoList.xaml">

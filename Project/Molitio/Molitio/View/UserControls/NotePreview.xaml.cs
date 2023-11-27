@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,13 +22,21 @@ namespace Molitio.View.UserControls
     public partial class NotePreview : UserControl
     {
         private ConnectionToDB connectionToDB;
+        private AddNote addNote;
         public int NotesID { get; set; }
         public static readonly DependencyProperty NoteTitleProperty =
             DependencyProperty.Register("NoteTitle", typeof(string), typeof(NotePreview));
 
         public static readonly DependencyProperty NoteDescProperty =
-            DependencyProperty.Register("NoteDate", typeof(string), typeof(NotePreview));
+            DependencyProperty.Register("NoteDesc", typeof(string), typeof(NotePreview));
 
+        public static readonly DependencyProperty NoteDateProperty =
+            DependencyProperty.Register("NoteDate", typeof(string), typeof(NotePreview));
+        public string NoteDate
+        {
+            get { return (string)GetValue(NoteDateProperty); }
+            set { SetValue(NoteDateProperty, value); }
+        }
         public string NoteTitle
         {
             get { return (string)GetValue(NoteTitleProperty); }
@@ -45,6 +54,7 @@ namespace Molitio.View.UserControls
             InitializeComponent();
             connectionToDB = new ConnectionToDB();
             DataContext = this;
+            addNote = new AddNote();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -62,6 +72,14 @@ namespace Molitio.View.UserControls
                 // User clicked "No" or closed the MessageBox, display a different message
                 MessageBox.Show("Deletion canceled.", "Canceled", MessageBoxButton.OK, MessageBoxImage.Information);
             }
+        }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            int notesID = NotesID;
+            string oldNotesTitle = NoteTitle;
+            string oldNotesDesc = NoteDesc;
+            addNote.UpdateData(notesID, oldNotesTitle, oldNotesDesc);
         }
     }
 }

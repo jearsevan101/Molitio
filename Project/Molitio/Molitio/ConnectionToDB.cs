@@ -367,6 +367,40 @@ namespace Molitio
                 conn.Close();
             }
         }
+        public void UpdateNote(int notesID, string noteTitle, string description)
+        {
+            try
+            {
+                conn.Open();
+                string updateQuery = "UPDATE notes SET notetitle = @newNoteTitle, notedesc = @newNoteDesc, notedate = @noteDate WHERE id_notes = @notesId";
+                using (NpgsqlCommand cmd = new NpgsqlCommand(updateQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@notesId", notesID);
+                    cmd.Parameters.AddWithValue("@newNoteTitle", noteTitle);
+                    cmd.Parameters.AddWithValue("@newNoteDesc", description);
+                    cmd.Parameters.AddWithValue("@noteDate",DateTime.Now.Date);
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Note updated successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        OnDataUpdated();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No notes were updated. notes not found or no changes made.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., log, throw custom exception)
+                throw new Exception($"Error updating note: {ex.Message}");
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
         public void DeleteNote(int noteId)
         {
             try
@@ -400,7 +434,7 @@ namespace Molitio
                 conn.Close();
             }
         }
-
+        
 
     }
 }

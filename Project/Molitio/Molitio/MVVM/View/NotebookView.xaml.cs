@@ -49,6 +49,7 @@ namespace Molitio.MVVM.View
                 {
                     NoteTitle = noteItem.NoteTitle,
                     NotesID = noteItem.NotesID,
+                    NoteDate= noteItem.NoteDate,
                     NoteDesc = noteItem.NoteDesc // Format as needed
                 };
 
