@@ -21,6 +21,8 @@ Molitio is an application designed to enhance productivity by offering features 
 ## Ambient Entertainment
 - Background musik dengan 4 tema umum, Fire place, Forrest, Ocean, dan LoFi
 - Jokes yang disediakan untuk memecah ketegangan aktivitas
+# Github Pages
+https://jearsevan101.github.io/Molitio/
 # Download the App
 You can download the executable file [here](https://drive.google.com/file/d/1WafaGBeWaCkGsDNAXs3MBqbqweFoZ_ib/view?usp=sharing).
 
