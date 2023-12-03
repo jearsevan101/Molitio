@@ -41,51 +41,54 @@ Faculty of Engineering, Gadjah Mada University
 ![Molitio](https://github.com/jearsevan101/Molitio/assets/111979263/91b83c47-8196-4c0e-a2ad-137c23a1c8ad)
 
 ## Panduan Aplikasi 
-Run file "Molitio.exe" untuk memulai aplikasi. Aplikasi akan terhubung ke database secara otomatis. 
+- Run file "Molitio.exe" untuk memulai aplikasi. Aplikasi akan terhubung ke database - secara otomatis. 
  
-Dalam aplikasi ini, terdapat 5 section utama (Pomodoro Timer, To Do List, Daily Task, Notes, BGM) dan 2 halaman utama (Productivity, Notebooks). 
+- Dalam aplikasi ini, terdapat 5 section utama (Pomodoro Timer, To Do List, Daily Task, Notes, BGM) dan 2 halaman utama (Productivity, Notebooks). 
  
-[Halaman Utama] 
+**Halaman Utama** 
 Navigasi halaman utama pada aplikasi ini dapat diubah melalui tombol di bagian atas aplikasi. 
  
-Halaman Productivity -> berisi fitur-fitur untuk meningkatkan produktivitas pengguna 
-Halaman Notebooks -> berisi notes-notes pengguna yang sebelumnya telah ditambah ke database 
+- Halaman Productivity -> berisi fitur-fitur untuk meningkatkan produktivitas pengguna 
+- Halaman Notebooks -> berisi notes-notes pengguna yang sebelumnya telah ditambah ke database 
  
-<Pomodoro Timer> 
-Timer untuk mengatur serta menyeimbangkan waktu mengerjakan tugas dan beristirahat. Timer dapat beralih antara pomodoro dan break. 
+**Pomodoro Timer** 
+- Timer untuk mengatur serta menyeimbangkan waktu mengerjakan tugas dan beristirahat. - Timer dapat beralih antara pomodoro dan break. 
  
-Tekan tombol "START" untuk memulai timer, "STOP" untuk menghentikan timer, dan "START" lagi untuk memulai ulang timer. 
-Short Break -> Timer ketika istirahat 300 detik 
-Long Break -> Timer ketika istirahat 900 detik 
+- Tekan tombol "START" untuk memulai timer, "STOP" untuk menghentikan timer, dan "START" lagi untuk memulai ulang timer. 
+- Short Break -> Timer ketika istirahat 300 detik 
+- Long Break -> Timer ketika istirahat 900 detik 
  
-<To Do List> 
-Reminder untuk mengerjakan suatu tugas/pekerjaan. Tugas akan diset tanggal deadlinenya dan dapat dicentang jika sudah selesai dikerjakan. 
+**To Do List** 
+- Reminder untuk mengerjakan suatu tugas/pekerjaan. Tugas akan diset tanggal deadlinenya dan dapat dicentang jika sudah selesai dikerjakan. 
  
-Add New -> Menambah To Do List baru 
-E -> Mengedit To Do List yang dipilih 
-D	-> Menghapus To Do List yang dipilih 
-Checklist -> Menyelesaikan To Do List tersebut. To Do List akan hilang setelah dicentang Refresh -> Mengupdate tampilan dari database 
+- Add New -> Menambah To Do List baru 
+- E -> Mengedit To Do List yang dipilih 
+- D	-> Menghapus To Do List yang dipilih 
+- Checklist -> Menyelesaikan To Do List tersebut. To Do List akan hilang setelah dicentang Refresh -> Mengupdate tampilan dari database 
  
-<Daily Task> 
-Reminder untuk mengerjakan tugas/pekerjaan harian. Tugas akan diset jamnya dan dapat dicentang jika sudah selesai dikerjakan. 
+**Daily Task**
+- Reminder untuk mengerjakan tugas/pekerjaan harian. Tugas akan diset jamnya dan dapat dicentang jika sudah selesai dikerjakan. 
  
-Add New -> Menambah Daily Task baru 
-E	-> Mengedit Daily Task yang dipilih 
-D -> Menghapus Daily Task yang dipilih 
-Checklist -> Menyelesaikan Daily Task tersebut. Daily Task akan hilang setelah dicentang Refresh -> Mengupdate tampilan dari database 
+- Add New -> Menambah Daily Task baru 
+- E	-> Mengedit Daily Task yang dipilih 
+- D -> Menghapus Daily Task yang dipilih 
+- Checklist -> Menyelesaikan Daily Task tersebut. Daily Task akan hilang setelah dicentang Refresh -> Mengupdate tampilan dari database 
  
-<Notes> 
-Catatan yang dapat ditambahkan oleh pengguna. 
+**Notes** 
+- Catatan yang dapat ditambahkan oleh pengguna. 
  
-Pengguna menginput title dan body, lalu klik "Save to Notebooks". Notes dapat dilihat di halaman Notebooks. 
+- Pengguna menginput title dan body, lalu klik "Save to Notebooks". Notes dapat dilihat di halaman Notebooks. 
  
-<BGM> 
-Background Music dengan beberapa pilihan untuk menemani pengguna mengerjakan tugas mereka. 
+**BGM** 
+- Background Music dengan beberapa pilihan untuk menemani pengguna mengerjakan tugas mereka. 
  
-BGM dapat dipilih dengan meng-klik salah satu judul BGM. Pengguna dapat menghentikan BGM dengan klik "Stop BGM". 
+- BGM dapat dipilih dengan meng-klik salah satu judul BGM. Pengguna dapat menghentikan BGM dengan klik "Stop BGM". 
 
 ## Blackbox Testing 
+
 ![image](https://github.com/jearsevan101/Molitio/assets/111979263/36075a43-587c-4fba-a661-083debe193fa)
+
 ![image](https://github.com/jearsevan101/Molitio/assets/111979263/5a1083c6-4fb7-46a9-a3bd-80b030bab3a4)
+
 ![image](https://github.com/jearsevan101/Molitio/assets/111979263/8f5299d3-ffe9-4fef-a3ec-a68dce142664)
 
