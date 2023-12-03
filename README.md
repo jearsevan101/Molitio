@@ -85,10 +85,10 @@ Navigasi halaman utama pada aplikasi ini dapat diubah melalui tombol di bagian a
 - BGM dapat dipilih dengan meng-klik salah satu judul BGM. Pengguna dapat menghentikan BGM dengan klik "Stop BGM". 
 
 ## Blackbox Testing 
+The complete black box testing for Molotio can be found [here](https://docs.google.com/spreadsheets/d/13zjnwUZ_wwuC435n0sfShKNLg8HKb-tLMc837uJKnzI/edit?usp=sharing).
+
 ![image](https://github.com/jearsevan101/Molitio/assets/72289543/28e3ceea-fc38-4dc5-a780-da362a697ecd)
 
 ![image](https://github.com/jearsevan101/Molitio/assets/72289543/bd58fc58-fb27-4b65-81b9-5246783d2c4a)
 
 ![image](https://github.com/jearsevan101/Molitio/assets/72289543/b0c4f63e-558d-4b87-8dcf-807dae812d8a)
-
-The complete black box testing for Molotio can be found [here](https://docs.google.com/spreadsheets/d/13zjnwUZ_wwuC435n0sfShKNLg8HKb-tLMc837uJKnzI/edit?usp=sharing).
