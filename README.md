@@ -31,7 +31,7 @@ https://jearsevan101.github.io/Molitio/
 # Download the App
 You can download the executable file [here](https://drive.google.com/file/d/1WafaGBeWaCkGsDNAXs3MBqbqweFoZ_ib/view?usp=sharing).
 
-# Senior Project - Electrical and Information Technology Department
+# Junior Project - Electrical and Information Technology Department
 Faculty of Engineering, Gadjah Mada University
 
 ## Product Details
@@ -85,10 +85,10 @@ Navigasi halaman utama pada aplikasi ini dapat diubah melalui tombol di bagian a
 - BGM dapat dipilih dengan meng-klik salah satu judul BGM. Pengguna dapat menghentikan BGM dengan klik "Stop BGM". 
 
 ## Blackbox Testing 
+![image](https://github.com/jearsevan101/Molitio/assets/72289543/28e3ceea-fc38-4dc5-a780-da362a697ecd)
 
-![image](https://github.com/jearsevan101/Molitio/assets/111979263/36075a43-587c-4fba-a661-083debe193fa)
+![image](https://github.com/jearsevan101/Molitio/assets/72289543/bd58fc58-fb27-4b65-81b9-5246783d2c4a)
 
-![image](https://github.com/jearsevan101/Molitio/assets/111979263/5a1083c6-4fb7-46a9-a3bd-80b030bab3a4)
+![image](https://github.com/jearsevan101/Molitio/assets/72289543/b0c4f63e-558d-4b87-8dcf-807dae812d8a)
 
-![image](https://github.com/jearsevan101/Molitio/assets/111979263/8f5299d3-ffe9-4fef-a3ec-a68dce142664)
-
+The complete black box testing for Molotio can be found [here](https://docs.google.com/spreadsheets/d/13zjnwUZ_wwuC435n0sfShKNLg8HKb-tLMc837uJKnzI/edit?usp=sharing).
